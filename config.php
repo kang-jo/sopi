@@ -2,24 +2,14 @@
 
 $timeflash = '1614171599';
 
-//DATA AKUN
 $useragent = 'user-agent: Mozilla/5.0 (Linux; Android 10; M2003J15SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Mobile Safari/537.36';
 $xcsrftoken = 'x-csrftoken: TCGpCQVp9CXnLBQoeGYuYMpLEnjWmqiN';
 $contentype = 'content-type: application/json';
 
-
-// DATA FLASH SALE 
-// YANG DIBUBAH PERTAMA
-// UBAH MULAI DARI HTTPS
 $referprduk = "referer: https://shopee.co.id/product/85791816/2053649078/";
 
-// UBAH PERTAMA KEDUA
-// COPY SHOPID DAN ITEMID DARI REFER
 $flashsalettime = "https://shopee.co.id/api/v2/item/get?itemid=2053649078&shopid=85791816";
 
-// YANG DI UBAH KETIGA 
-// SHOPID, ITEMID, MODELID
-// JALANKAN SAVE.PHP UNTUK MENDAPATKAN
 $dataaddtocart = '{
   "quantity": 1,
   "checkout": true,
@@ -32,8 +22,6 @@ $dataaddtocart = '{
   "modelid": 3681204545
 }';
 
-// YANG DI UBAH KE EMPAT
-// SHOPID, ITEMID, MODELID, PRICE BARANG
 $selectedorder = '{
   "selected_shop_order_ids": [
     {
@@ -63,11 +51,6 @@ $selectedorder = '{
   "use_coins": false
 }';
 
-// JANGAN LUPA DI UBAH PLACE ORDER 
-// HARGA
-// TOTAL HARGA 5299900000 3299900000
-// TOTAL HARGA + 1000
-// SHOPID , ITEMID , MODELID
 $datacheckout = '{
   "status": 200,
   "headers": {},
@@ -294,17 +277,6 @@ $datacheckout = '{
   }
 }';
 
-
-
-
-
-
-
-
-
-
-
-// DATA REFERAL TIDAK PERLU DI GANTI
 $referplace = 'referer: https://shopee.co.id/checkout?state=H8KLCAAAAAAAAAPDnVTDi27DqyAQw70Xw5Zew5h5w5nDscKvVBHDgjBOUDFQHlHCrMKqw7%2FDnsOBGCfCvVJ1V3dzV8KGecKec2bDjCcJcgIfw5hkScOfwpzCmn3DlzVNV1fDhMOfwow1TsKAw7PCpH%2FDu1zCrsKkw49fKTDCtD52bcOXflVEBsKYckw6JV97bHbDjcOhw5Acw5vCikxGwoBaEnbDjX53OB7DjsKnU0XCmBDDlGgqwoApwprCnMOYT3rCulp9HGgqRcO6wpEpD8K5A8K9OhNtCcO%2BwohMBxlmLMO7dcKpwogyV8OpwoPDpD4hdMOAw400woEWICjCvzHCrVN%2Fw7TDqMKoFMOCHcOiDC7CtXLDoD0VLMKwwpQUw5jCo8OYSE9IRcOAOcOjKMOqEsOiaikpYcK2wrDCgFgNCcOSwq5tw5pzd8OuwrDCvgcFPGDDrwLDqgnCgsO0XV3Dr8O2SVtpwq3DlMOXwoVOw7PCkmMdwozDmBlPScK1O8K4wpnCpsOxUGPCg0RlVsO2fw3Dt8OKwoQleMOhfHnDjWAzShMKwqbCjX%2FCucKvIMKbQ8KNfTZjw5LCv0DDkMKjw4EEJMKKw608WsKQPF7CrDPCk1kCSsOFw6jCgXIjwrXDn8OGODpAaMKFw7rDnUR%2Bw4NJwqwFf8OzZsOGQno2KMOEw6%2FCgMO5w5QzEcO7wq0iw4fClUsjS8KwFAvCo3FTw7HCpT3CvcOkw53DvsODwoRHw75OXx0UdXJMc3gyYDEYw4rCrFXDs8KPw4jDlcKPw70Ew5wlwofCjVPCucKKwrxBw6t1RMKww6DCrMKTOmR7MMO6KsKiwqbCg2LDvH0wwo9sw43Ci1oGVnTDhybCnMK5w7DDnELCrsOkw6LDj0LCpT0uw53Cl8KzWMKVEMOOw5jDp8Oawq0Rw7ZmNFAdwqchwpFYw5ZeLzpvwow1wpvCisKWW8O2w6vCqzBrTsO6w6Aiw7wHP2F5w7BQHgHCjzTDtsK3w7pSwrBiwonColPDnsK9f8O%2Bw49mLMORwqI6w7Acw783wrHCvsKGwqPCsAUAAA%3D%3D';
 $refernextcart = 'referer: https://shopee.co.id/cart';
 $linkcart = 'https://shopee.co.id/api/v2/cart/add_to_cart';
